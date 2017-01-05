@@ -1,0 +1,5 @@
+#remove this comment. move this into your /user/local/bin folder to be able to use the command music-renamer
+
+#!/usr/bin/env bash
+
+python /Users/kliffydeveloper/Developer/Python/MusicRenamer/music_rename_script.py "$@"
