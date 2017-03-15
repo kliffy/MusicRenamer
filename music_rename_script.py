@@ -80,6 +80,13 @@ def main(argv):
             new_name = new_name + ".mp3"
           else:
             new_name = re.sub(r"www(.*)net", '', name)
+
+            #common junk urls
+            new_name = re.sub("myhitmp3.top", "", new_name)
+            new_name = re.sub("EPDJ.ORG", "", new_name)
+            new_name = re.sub("www.my-free-mp3.club", "", new_name)
+            new_name = re.sub("www.myhitmp3.website", "", new_name)
+
             new_name = re.sub("&amp;", "&", new_name)
             new_name = re.sub("_", " ", new_name)
             new_name = re.sub(r"\[(.*)\]", r"(\1)", new_name) #[whatever remix] => (whatever remix)

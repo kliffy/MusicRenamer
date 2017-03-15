@@ -1,4 +1,5 @@
-#remove this comment. move this into your /user/local/bin folder to be able to use the command music-renamer
+#remove this comment. move this into your /user/local/bin folder to be able to use the command music-renamer from anywhere
+#example call to music-renamer: "music-renamer -replace-with-id3 -t -l ~/Documents/music/"
 
 #!/usr/bin/env bash
 
